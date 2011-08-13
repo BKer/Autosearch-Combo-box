@@ -807,7 +807,7 @@ accb.view.Autocomplete = new Class({
      * @param Object data The data to show
      */
     update: function(data) {
-        this.list.update(data, this.searchBox.getCoordinates());
+        this.list.update(data);
     }
 });
 
@@ -1144,8 +1144,8 @@ accb.view.List = new Class({
      * @param Object data The data to set
      * @param Object coordinates The coordinates to position the list
      */
-    update: function(data, coordinates) {
-        this._setStyle(coordinates);
+    update: function(data) {
+        this._setStyle();
         this._buildList(data);
 
         //FIXME Pretty ugly hack I think and does not work right the second time (cause => Cache :S)
