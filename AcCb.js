@@ -24,7 +24,7 @@
  *  Opera 11.01                 2011-03-14
  *
  * @author Bart Kerkvliet
- * @version 0.4.5c
+ * @version 0.4.6
  * @requires MooTools 1.2.* or MooTools 1.3.* (MooTools More is not required)
  * @date 2011-08-13
  * @license LGPL
@@ -50,6 +50,7 @@
  *
  * If a base href is set, problems arise when makeing a request using a relative url
  * (Possible workaround: use a complete path)
+ * Probably how base href should work
  *
  * A "customChange" get's fired, this limits external users a bit, because they
  * also have to fire a customChange event and can't rely on the normal change event
@@ -85,6 +86,8 @@
  * Change log:
  *
  * Version: Date:       Description:
+ * v0.4.6   2011-08-13  Version bump
+ *                      Fixed a small update bug -> OO thinking
  * v0.4.5c  2011-08-13  Documentation update
  *                      Made it GitHub ready
  * v0.4.5b  2011-04-14  Destroy fix (requests)
@@ -1200,4 +1203,3 @@ accb.view.List = new Class({
 //    },
 //    setOnlyMatch: false
 //}
-
